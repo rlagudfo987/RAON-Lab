@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQ | 라온 랩</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script defer src="../assets/js/main.js"></script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="navbar">
+      <a class="logo" href="../index.html"><span class="mark"></span><span>라온 랩</span></a>
+      <nav class="navlinks">
+        <a data-nav href="../index.html">홈</a>
+        <a data-nav href="service.html">서비스</a>
+        <a data-nav href="report.html">리포트 예시</a>
+        <a data-nav href="faq.html">FAQ</a>
+        <a data-nav href="contact.html">문의</a>
+      </nav>
+      <button class="hamburger" onclick="toggleMobileMenu()" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="mobilePanel" class="mobile-panel">
+      <a data-nav href="../index.html">홈</a>
+      <a data-nav href="service.html">서비스</a>
+      <a data-nav href="report.html">리포트 예시</a>
+      <a data-nav href="faq.html">FAQ</a>
+      <a data-nav href="contact.html">문의</a>
+      <a data-nav href="privacy.html">개인정보</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <section class="page-head">
+      <span class="badge">자주 묻는 질문</span>
+      <h1>FAQ</h1>
+      <p class="small">서비스 이용에 필요한 핵심만 모았습니다.</p>
+      <div class="hr"></div>
+    </section>
+
+    <section class="section">
+      <div class="card pad">
+        <h3 style="margin:0 0 6px 0">Q. 병원 정액검사와 뭐가 달라요?</h3>
+        <p style="margin:0;color:rgba(230,237,247,.82)">
+          병원 검사는 주로 외형 지표 중심이며, 본 서비스는 정기 모니터링 UX와 리포트 중심의 관리 구조를 제공합니다.
+        </p>
+        <div class="hr"></div>
+
+        <h3 style="margin:0 0 6px 0">Q. 개인정보는 어떻게 보호하나요?</h3>
+        <p style="margin:0;color:rgba(230,237,247,.82)">
+          익명 코드 기반 식별, 최소 수집, 접근 통제 등 원칙을 기반으로 설계합니다. 자세한 내용은 개인정보 페이지를 확인하세요.
+        </p>
+        <div class="hr"></div>
+
+        <h3 style="margin:0 0 6px 0">Q. 결과는 진단인가요?</h3>
+        <p style="margin:0;color:rgba(230,237,247,.82)">
+          본 페이지는 데모 예시이며, 실제 의료적 진단/치료를 대체하지 않습니다. 필요 시 의료 전문가 상담을 권장합니다.
+        </p>
+
+        <div style="height:12px"></div>
+        <a class="btn primary" href="contact.html">추가 문의하기</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div style="font-weight:800; color: rgba(230,237,247,.9);">라온 랩 (Raon Lab)</div>
+        <div class="small">© <span id="y"></span> Raon Lab.</div>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">개인정보</a>
+        <a href="contact.html">문의</a>
+      </div>
+    </div>
+  </div>
+  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+</footer>
+</body>
+</html>
