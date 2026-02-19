@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>개인정보 | 라온 랩</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script defer src="../assets/js/main.js"></script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="navbar">
+      <a class="logo" href="../index.html"><span class="mark"></span><span>라온 랩</span></a>
+      <nav class="navlinks">
+        <a data-nav href="../index.html">홈</a>
+        <a data-nav href="service.html">서비스</a>
+        <a data-nav href="report.html">리포트 예시</a>
+        <a data-nav href="faq.html">FAQ</a>
+        <a data-nav href="contact.html">문의</a>
+      </nav>
+      <button class="hamburger" onclick="toggleMobileMenu()" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="mobilePanel" class="mobile-panel">
+      <a data-nav href="../index.html">홈</a>
+      <a data-nav href="service.html">서비스</a>
+      <a data-nav href="report.html">리포트 예시</a>
+      <a data-nav href="faq.html">FAQ</a>
+      <a data-nav href="contact.html">문의</a>
+      <a data-nav href="privacy.html">개인정보</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <section class="page-head">
+      <span class="badge">Privacy</span>
+      <h1>개인정보 처리방침 (예시)</h1>
+      <p class="small">운영 전, 실제 법무/컴플라이언스 검토 후 확정이 필요합니다.</p>
+      <div class="hr"></div>
+    </section>
+
+    <section class="section">
+      <div class="card pad">
+        <h3 style="margin:0 0 6px 0">1. 수집 항목</h3>
+        <p style="margin:0;color:rgba(230,237,247,.82)">
+          최소한의 정보(연락처, 서비스 제공에 필요한 범위)를 원칙으로 합니다.
+        </p>
+        <div class="hr"></div>
+        <h3 style="margin:0 0 6px 0">2. 이용 목적</h3>
+        <p style="margin:0;color:rgba(230,237,247,.82)">
+          서비스 제공, 고객 문의 대응, 품질 개선을 위한 통계 분석 등.
+        </p>
+        <div class="hr"></div>
+        <h3 style="margin:0 0 6px 0">3. 보관/파기</h3>
+        <p style="margin:0;color:rgba(230,237,247,.82)">
+          목적 달성 후 지체 없이 파기하며, 관계 법령에 따라 필요한 기간만 보관합니다.
+        </p>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div style="font-weight:800; color: rgba(230,237,247,.9);">라온 랩 (Raon Lab)</div>
+        <div class="small">© <span id="y"></span> Raon Lab.</div>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">개인정보</a>
+        <a href="contact.html">문의</a>
+      </div>
+    </div>
+  </div>
+  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+</footer>
+</body>
+</html>
